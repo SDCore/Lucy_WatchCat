@@ -5,7 +5,7 @@ const { Client, GatewayIntentBits } = require('discord.js');
 
 dotenv.config({ quiet: true });
 
-const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.GuildMembers] });
+const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.GuildMembers, GatewayIntentBits.MessageContent] });
 
 client
 	.login(process.env.DISCORD_TOKEN)
